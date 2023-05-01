@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+<listeners>
+<listener class-name="genericlibrary.ezen_extentreportslisennerdir"></listener>
+
+</listeners>
+  <test thread-count="5" name="Testcases">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testcaselibrary.Test_Homepagelib"/>
+    </classes>
+  </test> <!-- Testcases -->
+</suite> <!-- TestSuite -->
